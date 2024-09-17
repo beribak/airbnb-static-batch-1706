@@ -1,0 +1,11 @@
+<h1>Flats</h1>
+<h3 class="text-danger">Flats in Barcelona</h3>
+
+<% @flats.each do |flat| %>
+ <div>
+    <img class="w-50" src="<%= flat["imageUrl"] %>" alt="">
+    <h4><%= flat["name"] %></h4>
+    <p><%= flat["price"] %></p>
+
+ </div> 
+<% end %>
